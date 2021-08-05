@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000;
+}
+
+.card {
+  max-width: 50%;
+  border-radius: 50px;
+  /* background: ; */
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  padding: 0 2rem;
+  border-radius: 30px;
+  transform-style: preserve-3d;
+}
+
+.haikyu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.haikyu img {
+  max-width: 80%;
+  margin: 2rem;
+  z-index: 2;
+  transition: all 0.75s ease;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  z-index: 1;
+}
+
+h1 {
+  margin: 20px 0;
+  color: #141414;
+  transition: all 0.75s ease;
+}
+
+h3 {
+  margin: 20px 0;
+  font-weight: lighter;
+  color: #4a4a4a;
+  transition: all 0.75s ease;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  background: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  font-weight: bold;
+  transition: all 0.75s ease;
+}
+
+.purchase button {
+  margin: 20px 0;
+  margin-bottom: 30px;
+  width: 100%;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  font-weight: bolder;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  transition: all 0.75s ease;
+  padding: 15px;
+}
